@@ -220,7 +220,7 @@ public:
     virtual void ClosePlayerMenu(int iSlot) = 0;
     virtual std::string escapeString(const std::string& input) = 0;
     virtual bool IsMenuOpen(int iSlot) = 0;
-	virtual void DisplayPlayerMenu(Menu& hMenu, int iSlot, bool bClose = true, bool bReset = true) = 0;
+	virtual void DisplayPlayerMenu(Menu& hMenu, int iSlot, bool bClose, bool bReset) = 0;
     virtual void AddRawItemMenu(Menu &hMenu, const char* sBack, const char* sText, int iType = 1) = 0;
     virtual MenuType GetMenuType(int iSlot) = 0;
 };
