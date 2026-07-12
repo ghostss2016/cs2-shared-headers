@@ -32,6 +32,7 @@ struct FakeConVar
 };
 
 #define PLAYERS_INTERFACE "IPlayersApi"
+#define Players_INTERFACE "IPlayersApi"   // alias: admin/chat-модули используют mixed-case имя
 class IPlayersApi
 {
 public:
